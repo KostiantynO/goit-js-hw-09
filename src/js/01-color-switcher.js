@@ -18,7 +18,7 @@ const onStartBtnClick = e => {
   e.currentTarget.setAttribute('disabled', 'true');
 
   do {
-    setTimeout(switchBgColor, 250);
+    setTimeout(switchBgColor(), 1000);
   } while (changing === true);
 
   btnStop.addEventListener('click', onStopBtnClick, {
