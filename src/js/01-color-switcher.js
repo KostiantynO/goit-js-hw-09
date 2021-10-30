@@ -17,13 +17,15 @@ const onStartBtnClick = e => {
   changing = true;
   e.currentTarget.setAttribute('disabled', 'true');
 
-  do {
-    setTimeout(switchBgColor(), 1000);
-  } while (changing === true);
-
   btnStop.addEventListener('click', onStopBtnClick, {
     once: true
   });
+
+  if (changing === true) {
+    while (changing === true) {
+      setTimeout(switchBgColor, 1000);
+    }
+  }
 };
 
 const onStopBtnClick = e => {
