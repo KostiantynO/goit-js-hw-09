@@ -1,13 +1,14 @@
-const btnStart = document.querySelector('[data-start]');
-const btnStop = document.querySelector('[data-stop]');
+const btnStart = document.querySelectorAll('button')[0];
 
-console.log(btnStart);
+const btnStop = document.querySelectorAll('button')[1];
+
+
+const el = document.createElement('h1');
+el.textContent = 'Hello World';
+document.body.appendChild(el);
+
 
 let changing = false;
-
-const switchBgColor = () => {
-  document.body.style.backgroundColor = getRandomHexColor();
-}
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
@@ -23,7 +24,10 @@ const onStartBtnClick = e => {
 
   if (changing === true) {
     while (changing === true) {
-      setTimeout(switchBgColor, 1000);
+      setTimeout(
+        () => {
+          document.body.style.backgroundColor = getRandomHexColor();
+        }, 1000);
     }
   }
 };
