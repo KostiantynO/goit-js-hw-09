@@ -16,3 +16,28 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.set-timer-input {
+  margin-right: 10px;
+
+  background-color: rgba(#eee, 0.21);
+  border: 2px solid rgba(#212121, 0.5);
+}
+
+.start-timer-btn {
+  padding: 10px 20px;
+
+  font-size: 1rem;
+  color: inherit;
+
+  background: none;
+  background-color: tomato;
+  border: none;
+  appearance: none;
+}
+
+.start-timer-btn:focus,
+.start-timer-btn:hover {
+  color: rgba(#eee, 0.21);
+  box-shadow: 0 0 0 35px rgba(#212121, 0.5);
+}
