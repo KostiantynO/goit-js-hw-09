@@ -10,31 +10,42 @@
   <body>
     <p><a href="index.html">Go back</a></p>
 
-    <input type="text" id="datetime-picker" />
+    <div class="timer__controls">
+      <label class="timer__label" aria-label="Choose start date for countdown">
+        <input class="timer__input" type="text" id="datetime-picker" />
+      </label>
+      <button
+        class="start-btn"
+        type="button"
+        disabled
+        data-start
+        aria-label="Start timer"
+      >
+        <span class="btn__text">Start</span>
+      </button>
+    </div>
 
-    <button type="button" data-start>Start</button>
-
-    <div class="timer">
-      <div class="field">
+    <ul class="timer">
+      <li class="timer__field">
         <span class="value" data-days>00</span>
         <span class="label">Days</span>
-      </div>
+      </li>
 
-      <div class="field">
+      <li class="timer__field">
         <span class="value" data-hours>00</span>
         <span class="label">Hours</span>
-      </div>
+      </li>
 
-      <div class="field">
+      <li class="timer__field">
         <span class="value" data-minutes>00</span>
         <span class="label">Minutes</span>
-      </div>
+      </li>
 
-      <div class="field">
+      <li class="timer__field">
         <span class="value" data-seconds>00</span>
         <span class="label">Seconds</span>
-      </div>
-    </div>
+      </li>
+    </ul>
 
     <script src="js/02-timer.js"></script>
   </body>
