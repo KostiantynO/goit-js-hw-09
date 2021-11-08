@@ -36,6 +36,17 @@ button {
   height: calc(65vh);
 }
 
+.start-btn {
+  position: relative;
+  z-index: 20;
+}
+
+.timer-input {
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
 .start-btn,
 .stop-btn {
   max-width: 30rem;
@@ -137,7 +148,9 @@ button {
 }
 
 .timer__input:disabled {
-  box-shadow: 0.21rem 0.21rem 0.35rem 0.02rem rgba(21, 21, 21, 0.5);
+  background: -2.1rem -2.1rem / 150% 200% radial-gradient(circle at top left, #eee, #777);
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgb(21 21 21 / 60%);
+  transform: translate(0, 0);
 }
 
 .timer {
@@ -168,3 +181,18 @@ button {
 }
 
 /* || ----- END TASK 2 ----- */
+
+/* || ----- START TASK 3 ----- */
+
+.form {
+  display: flex;
+  gap: clamp(1rem, 2.5vw, 2rem);
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  max-width: 10rem;
+}
+
+/* || ----- END TASK 3 ----- */
