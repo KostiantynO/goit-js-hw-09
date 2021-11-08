@@ -136,7 +136,7 @@ button {
   border-left: 1px solid rgba(21, 21, 21, 0.1);
   border-radius: 0.5rem;
 
-  box-shadow: 1rem 1rem 2.1rem 0.3rem rgba(21, 21, 21, 0.5);
+  box-shadow: 1rem 1rem 1rem 0.2rem rgba(21, 21, 21, 0.5);
 
   transition: var(--time) var(--cubic);
   transition-property: color, box-shadow;
@@ -192,7 +192,53 @@ button {
 .form__label {
   display: flex;
   flex-direction: column;
+
+  padding: 0.4rem 1rem;
+
+  font-family: inherit;
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.5;
+
+  background: 0 0 / 300% 200% radial-gradient(circle at top left, #fff, #ddd);
+  border: none;
+  border-top: 1px solid rgba(21, 21, 21, 0.1);
+  border-left: 1px solid rgba(21, 21, 21, 0.1);
+  border-radius: 0.5rem;
+
+  box-shadow: 1rem 1rem 2.1rem 0.3rem rgba(21, 21, 21, 0.5);
+
+  transition: var(--time) var(--cubic);
+  transition-property: color, box-shadow;
+  appearance: none;
+}
+
+.form__input {
+  padding: 0.4rem 1rem;
+
   max-width: 10rem;
+  font-family: inherit;
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.5;
+
+  background: 0 0 / 300% 200% radial-gradient(circle at top left, #fff, #ddd);
+  border: none;
+  border-top: 1px solid rgba(21, 21, 21, 0.1);
+  border-left: 1px solid rgba(21, 21, 21, 0.1);
+  border-radius: 0.5rem;
+
+  box-shadow: 1rem 1rem 2.1rem 0.3rem rgba(21, 21, 21, 0.5);
+
+  transition: var(--time) var(--cubic);
+  transition-property: color, box-shadow;
+  appearance: none;
+}
+
+.form__input:focus,
+.form__input:hover {
+  background: 0 0 / 300% 200% radial-gradient(circle at top left, #fff, #777);
+  box-shadow: 0.21rem 0.21rem 0.35rem 0.03rem rgba(21, 21, 21, 0.5);
 }
 
 /* || ----- END TASK 3 ----- */
